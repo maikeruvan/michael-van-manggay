@@ -1,0 +1,51 @@
+/* Hamburger Menu */
+.menu {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__bar {
+    transition: transform 0.3s ease, background-color 0.3s ease-in-out;
+    background-color: #0f0f0f;
+    height: 2px;
+    width: 24px;
+    position: relative;
+    border-radius: 999px;
+}
+
+.menu__bar::before,
+.menu__bar::after {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    content: "";
+    background-color: #0f0f0f;
+    height: 2px;
+    width: 24px;
+    position: absolute;
+    left: 0;
+    border-radius: 999px;
+}
+
+.menu__bar::before {
+    top: -8px;
+}
+
+.menu__bar::after {
+    top: 8px;
+}
+
+.menu.menu--open .menu__bar {
+    background-color: transparent;
+}
+
+.menu.menu--open .menu__bar::before {
+    transform: translate(0px, 8px) rotate(45deg);
+}
+
+.menu.menu--open .menu__bar::after {
+    transform: translate(0px, -8px) rotate(-45deg);
+}
+/* Hamburger Menu End */

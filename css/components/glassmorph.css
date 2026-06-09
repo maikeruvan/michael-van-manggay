@@ -1,0 +1,22 @@
+/* Base Glassmorph */
+.glassmorph {
+    background: rgba(0, 0, 0, 0.881);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+/* Glassmorph Variants */
+.glassmorph--lime {
+    background: rgba(203, 214, 19, 0.2);
+    color: var(--lime-2);
+}
+
+.glassmorph--rose {
+    background: rgba(245, 185, 185, 0.2);
+    color: var(--rose-2);
+}
+
+.glassmorph--white {
+    background: rgba(241, 241, 241, 0.93);
+    color: var(--dark-primary);
+}

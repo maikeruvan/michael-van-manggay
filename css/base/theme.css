@@ -1,0 +1,44 @@
+/* I only have 2 themes - Light and Dark */
+.light {
+    --white-primary: #f1f1f1;
+    --white-secondary: #aaaaaa;
+    --black-primary: #0f0f0f;
+    --black-secondary: #171717;
+    --lime-primary: #97c42e;
+    --lime-secondary: #759e0f;
+    --rose-primary: #ec003f;
+    --rose-secondary: #d1043bd8;
+    --cyan-primary: #1674ea;
+    --cyan-secondary: #19adc4b1;
+    --gray-primary: rgba(218, 218, 218, 0.868);
+    --gray-secondary: rgba(27, 27, 27, 0.868);
+    --navbar-bg: rgba(241, 241, 241, 0.749);
+}
+
+/* This only flips the default color variables */
+.dark {
+    --black-primary: #f1f1f1;
+    --black-secondary: #aaaaaa;
+    --white-primary: #0f0f0f;
+    --white-secondary: #171717;
+    --gray-primary: rgba(27, 27, 27, 0.868);
+    --gray-secondary: rgba(218, 218, 218, 0.868);
+    --navbar-bg: rgba(15, 15, 15, 0.712);
+}
+
+.theme-toggle {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* The light theme icon is only displayed if dark them is active */
+.theme-toggle--light {
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.theme-toggle--dark {
+    width: 1.5rem;
+    height: 1.5rem;
+}

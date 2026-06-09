@@ -1,0 +1,11 @@
+/* WebKit/Blink Browsers (Chrome, Safari, Edge, Opera) */
+::selection {
+  background-color: #97c42e;
+  color: #171717;
+}
+
+/* Mozilla Firefox */
+::-moz-selection {
+  background-color: #97c42e;
+  color: #171717;
+}

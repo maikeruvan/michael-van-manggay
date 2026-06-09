@@ -1,0 +1,55 @@
+/* CSS Global Variables */
+:root {
+    /* Font Family */
+    --font-primary: "Poppins", system-ui, -apple-system, sans-serif;
+    --font-secondary: "Teko", system-ui, -apple-system, sans-serif;
+
+    /* Navbar Default */
+    --navbar-height: 3.75rem;
+    --navbar-bg: rgba(241, 241, 241, 0.749);
+
+    /* Fallback Colors if light mode fails */
+    --white-primary: #f1f1f1;
+    --white-secondary: #aaaaaa;
+    --black-primary: #0f0f0f;
+    --black-secondary: #171717;
+    --lime-primary: #98c526;
+    --lime-secondary: #50850a;
+    --rose-primary: #ec003f;
+    --rose-secondary: #d1043bd8;
+    --cyan-primary: #1674ea;
+    --cyan-secondary: #19adc4;
+    --gray-primary: rgba(218, 218, 218, 0.868);
+    --gray-secondary: rgba(27, 27, 27, 0.868);
+
+    /* Text Sizes */
+    --text-xs: 0.625rem;   /* 10px */
+    --text-sm: 0.75rem;    /* 12px */
+    --text-md: 0.875rem;   /* 14px */
+    --text-base: 1rem;     /* 16px */
+    --text-lg: 1.125rem;   /* 18px */
+    --text-xl: 1.25rem;    /* 20px */
+    --text-2xl: 1.375rem;  /* 22px */
+    --text-3xl: 1.5rem;    /* 24px */
+    --text-4xl: 1.75rem;   /* 28px */
+    --text-5xl: 2rem;      /* 32px */
+    --text-6xl: 2.25rem;   /* 36px */
+    --text-7xl: 2.5rem;    /* 40px */
+    --text-8xl: 3rem;      /* 48px */
+    --text-9xl: 3.5rem;    /* 56px */
+    --text-10xl: 4rem;     /* 64px */
+    --text-11xl: 4.5rem;   /* 72px */
+}
+
+/* Media Query */
+@media (min-width: 768px) {
+    :root {
+        --navbar-height: 4.375rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --navbar-height: 5rem;
+    }
+}
